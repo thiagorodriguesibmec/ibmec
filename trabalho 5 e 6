@@ -1,0 +1,72 @@
+### Trabalho Semana 5:
+
+#### Estrutura de Repetição:
+
+```python
+contador = 1
+while contador <= 5:
+    print(contador)
+    contador += 1
+```
+
+#### Estrutura de Tomada de Decisão:
+
+```python
+numero = float(input("Digite um número: "))
+
+if numero > 0:
+    print("O número é positivo.")
+elif numero < 0:
+    print("O número é negativo.")
+else:
+    print("O número é zero.")
+```
+
+### Trabalho Semana 6:
+
+#### Exemplo de código com operadores lógicos
+
+A ordem de precedência dos operadores lógicos em Python é a seguinte, da maior para a menor precedência:
+1. `not`
+2. `and`
+3. `or`
+
+#### Exemplo de operadores lógicos em Python:
+
+##### Exemplo 1: Utilizando operador `and`
+```python
+x = 5
+y = 10
+z = 15
+resultado_and = (x < y) and (y < z)
+print("Resultado do operador and:", resultado_and)  # Saída: True, porque ambas as condições são verdadeiras
+```
+
+##### Exemplo 2: Utilizando operador `or`
+```python
+x = 5
+y = 10
+z = 3
+resultado_or = (x < y) or (y < z)
+print("Resultado do operador or:", resultado_or)  # Saída: True, porque pelo menos uma das condições é verdadeira
+```
+
+##### Exemplo 3: Utilizando operador `not`
+```python
+x = 5
+y = 10
+resultado_not = not (x == y)
+print("Resultado do operador not:", resultado_not)  # Saída: True, porque a condição é falsa e o not inverte para verdadeiro
+```
+
+##### Modificando a ordem das operações lógicas:
+Você pode modificar a ordem das operações lógicas utilizando parênteses para agrupar expressões.
+
+##### Exemplo de modificação da ordem das operações lógicas:
+```python
+x = 5
+y = 10
+z = 15
+resultado_modificado = (x < y) or ((y < z) and (x < z))
+print("Resultado modificado:", resultado_modificado)  # Saída: True, porque a segunda condição (y < z) and (x < z) é verdadeira
+```
